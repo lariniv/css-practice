@@ -1,0 +1,260 @@
+
+.card-dark {
+  background: #ededed;
+}
+
+/* :root {
+  background: purple;
+}
+html {
+  max-width: 720px;
+  background: blue;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color:red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #4d4b4b;
+}
+
+#user {
+  color:pink;
+}
+
+h1,
+h2,
+button {
+  color:green;
+}
+
+.button {
+  background:red;
+}
+
+.user {
+  color:cadetblue	;
+}
+
+.user {
+  color:rgb(113, 209, 156);
+}
+
+footer > .user {
+  color: palegoldenrod;
+}
+
+footer .child {
+  color: yellow;
+}
+
+h1 + p {
+  background:lavender;
+}
+
+h1 ~ em {
+  background:darksalmon;
+}
+
+h1 ~ div > p {
+  background:blue;
+} */
+
+/* 
+
+.item {
+  color:blue;
+}
+
+.item:first-child {
+  color:cyan;
+}
+
+.item:last-child {
+  color:violet;
+}
+
+.item:only-child {
+  color:brown;
+}
+
+.item:last-of-type {
+  color:coral;
+}
+
+.item:only-of-type {
+  color:red;
+}
+
+.item:nth-child(3n+1){
+  background:yellow;
+}
+
+p:not(.item){
+  color:yellowgreen;
+}
+.item:not(p){
+  color:floralwhite
+}
+
+p:empty{
+  height: 10px;
+  background-color: black;
+} */
+
+/* 
+
+.input-dark{
+  background: #908f8f;
+}
+
+.input-dark[required]{
+  background: #a11d1d;
+}
+
+.input-dark[type="number"] {
+  background: #36d869;
+}
+.small-img[alt~="small"] {
+  height: 100px;
+}
+
+a[rel~="external"] {
+  color:red;
+}
+
+button[class|="btn"] {
+  background:aqua;
+}
+
+a[class*="btn"] {
+  background:rgb(21, 120, 120);
+}
+
+a[class$="big"] {
+  background:rgb(197, 26, 197);
+}
+
+.btn::first-letter{
+  color:#ddff00;
+}
+
+.big-text::first-line{
+  color:#12993f;
+}
+
+.input-dark::placeholder{
+  color:green;
+}
+
+.before-after::before,
+.before-after::after{
+  content:"$$";
+  color:#a11d1d;
+  background:yellow;
+} */
+
+#test:target {
+  color:red;
+}
+
+.link:link {
+  color:red;
+}
+
+.link:hover {
+  color:green;
+}
+
+.link:active {
+  color:purple;
+}
+
+.card:active {
+  background-color:palegoldenrod;
+}
+
+input {
+  background-color:gray;
+}
+
+.card:focus-within {
+  background-color:violet;
+}
+
+input:focus {
+  background-color:red;
+}
+
+.card:lang(en) {
+  background-color:blueviolet;
+}
+
+.card:lang(en) > span::after{
+  content: " en";
+}
+
+button {
+  background-color:aqua;
+}
+
+button:enabled {
+  color:greenyellow;
+}
+
+button:disabled{
+  background-color: lightgray;
+}
+
+.inp:read-write {
+  background-color:blue;
+}
+
+.inp:read-only {
+  background-color:red;
+}
+
+input[type="checkbox"]:checked ~ span {
+  background-color:red ;
+}
+
+.valid:valid {
+  background-color:yellow;
+}
+
+.valid:invalid {
+  background-color:gold;
+}
+
+.valid:optional {
+  background-color:greenyellow;
+}
+
+.number:focus{
+  background-color:pink;
+}
+
+.number:out-of-range{
+  background-color:fuchsia;
+}
+
+.number:in-range{
+  background-color:green;
+}
+
+.number:invalid {
+  background-color:yellow;
+}
+
+input:placeholder-shown ~ span{
+  background-color: blue;
+}
