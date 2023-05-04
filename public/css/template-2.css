@@ -1,0 +1,311 @@
+:root {
+    --text-color:#212529;
+    --space-medium: 24px;
+}
+
+.page {
+    background: #ffffff;
+    padding: 0 15px;
+}
+
+.page-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.header {
+    padding:var(--space-medium);
+
+    border-bottom:1px solid #dee2e6;
+}
+
+.header-logo > span{
+    font-size: 17px;
+}
+
+.divider {
+    height: 1px;
+    background: #dee2e6;
+}
+
+.nav {
+    display:block;
+}
+
+.nav-link {
+    padding: 0;
+    display: inline;
+    color: #343a40;
+    font-size: 16px;
+    text-decoration: none; 
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color:blue;
+}
+.nav-ver > .nav-link:not(:last-child) {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.nav-inline > .nav-link:not(:last-child) {
+    margin-right: var(--space-medium);
+}
+
+.header-nav-right {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.page-block:not(:last-child) {
+    margin-bottom: 80px;
+}
+
+.footer {
+    padding: var(--space-medium) 0;
+
+    border-top:1px solid #dee2e6;
+
+}
+
+.footer-copywright {
+    font-size: 14px;
+    color: #6c757d;
+
+    display: block;
+
+    margin-top: 12px;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color, #212529);
+
+    display:block;
+    margin-bottom:12px;
+}
+
+.hero-title {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.hero-text {
+    color: #fff;
+    font-size: 20px;
+    max-width: 585px;
+    line-height: 1.5;
+}
+
+.hero {
+	border-radius: 24px;
+	background-color: #343A40;
+	padding: 80px;
+}
+
+.button {
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+
+	padding: 10px 20px;
+
+	display: inline-block;
+
+	max-width: 248px;
+	width: 100%;
+
+	background-color: #007BFF;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.button:hover {
+	background-color:#3798ff;
+}
+
+.preview {
+	padding: 24px;
+	border-radius: 24px;
+	border: 1px solid #DEE2E6;
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05) ;
+}
+
+.preview-header > span {
+	display:inline-block;
+}
+
+.preview-header > span:not(:last-of-type) {
+	margin-right: 12px;
+}
+
+.preview-date {
+	color:#6C757D;
+	font-size: 16px;
+}
+
+.preview-category {
+	font-weight: 700;
+	font-size: 16px;
+}
+
+.preview-title {
+	display: block;
+
+	color: #343A40;
+	font-weight: 500;
+	font-size: 28px;
+}
+
+.preview > *:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.preview-desc {
+	color: #212529;
+	font-size: 16px;
+}
+
+.preview-category-1 {
+	color: #007BFF;
+}
+
+.preview-category-2 {
+	color: #198754;
+}
+
+.preview-category-3 {
+	color: #FF0000;
+}
+
+.preview-category-4 {
+	color: #FF7A00;
+}
+
+.list-header {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #DEE2E6;
+	margin-bottom: 40px;
+}
+
+.list-title {
+	font-weight: 500;
+	font-size: 32px;
+	color: #212529;
+	margin: 0;
+}
+
+.category-list {
+	text-align: right;
+}
+
+.category-button {
+	font-size: 16px;
+	color: #6c757d;
+
+	border-radius: 40px;
+	border: 1px solid #6c757d;
+
+	padding: 10px 16px;
+	line-height: 100%;
+}
+
+.category-button:hover {
+	background-color: #6c757d11;
+}
+
+.list-aside {
+	margin-left:40px;
+}
+
+.list > *:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.post-title {
+	display: block;
+	font-weight: 500;
+	font-size: 28px;
+	color: #212529;
+}
+
+.post {
+	padding-bottom: 12px;
+	border-bottom: 1px solid #DEE2E6;
+}
+
+.post > *:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.post-info {
+	color: #999999;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+.post-author {
+	color: #0050ff;
+}
+
+.post-desc {
+	font-size: 16px;
+	font-weight: 400;
+	color: #212529;
+}
+
+.list-aside > *:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.about {
+	background-color: #f8f9fa;
+	padding: 24px;
+}
+
+.about-title {
+	color: #212529;
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.about-text {
+	color: #212529;
+	font-weight: 400;
+	font-size: 14px;
+
+	line-height: 170%;
+}
+
+.link-list {
+	padding: 24px;
+}
+
+.link-title {
+	display: block;
+
+	font-weight: 500;
+	font-size: 24px;
+	color: #212529;
+}
+
+.link-list > *:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.link-item {
+	font-size: 16px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #007bff;
+
+	display: block;
+}
+
+.link-item:hover {
+	text-decoration: underline;
+}

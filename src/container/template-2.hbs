@@ -1,0 +1,97 @@
+<div class='page'>
+    <div class="page-content">
+        <header class="page-block">
+            <div class="header row g-0">
+                <div class="col-3">
+                     {{>logo}}
+                </div>
+
+                <nav class="header-nav col-9 ">
+                    <div class="header-nav-right">
+                        {{> nav list=header }}
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="page-block">
+            <div class="hero">
+                {{#with hero}}
+                    {{> hero title=title text=text}}
+                    {{#with button}}
+                        <a href="{{url}}" class="button">{{text}}</a>
+                    {{/with}}
+                {{/with}}
+            </div>
+        </section>
+
+        <section class="page-block">
+            <div class="row g-4">
+                {{#each preview}}
+                    <div class="col-6"> 
+                        {{> card-review data=this}}
+                    </div>
+                {{/each}}
+            </div>
+        </section>
+
+        <main class="page-block">
+            <div class="main">
+                <div class="row g-0">
+                    <div class="list-header col-12">
+                        <div class="row g-0">
+                            <div class="col-6">
+                                <h2 class="list-title">List of posts</h2>
+                            </div>
+                            <div class="col-6">
+                                <div class="category-list">
+                                    {{#each categories}}
+                                        <button class="category-button">{{text}}</button>
+                                    {{/each}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-7">
+                        <div class="list">
+                            {{#each news}}
+                                {{> card-post data=this}}
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <aside class="list-aside">
+                            <div class="about">
+                                <h4 class="about-title">About</h4>
+                                <p class="about-text">{{about}}</p>
+                            </div>
+
+                            {{> link-list title="Archives" data=archive}}
+
+                            {{> link-list title="Social" data=social}}
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <footer class="page-block">
+            <div class="row footer g-0">
+                <div class="col-3">
+                    {{> logo}}
+                    <span class="footer-copywright">Copyright 2023-2024</span>
+                </div>
+
+                {{#each footer}}
+                    <div class="col-3">
+                        <li class="footer-title">{{title}}</li>
+                        {{> nav list=links isVertical=true}}
+                    </div>
+                {{/each}}
+            </div>   
+        </footer>
+    </div>
+</div>
