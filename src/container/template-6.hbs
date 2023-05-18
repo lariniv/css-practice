@@ -1,0 +1,87 @@
+<header class="header">
+	<div>
+		{{>logo}}
+	</div>
+
+	<nav class="header-nav">
+		<div class="header-nav-right">
+			{{> nav list=header }}
+		</div>
+	</nav>
+</header>
+
+<div class="hero">
+	{{#with info}}
+	<div class="hero-info">
+		<h1 class="hero-info-title">{{title}}</h1>
+		<p class="hero-info-text">{{description}}</p>
+	</div>
+	{{/with}}
+	{{#with form}}
+		<div class="hero-form">
+			<div class="hero-form-block">
+				{{#each inputs}}
+					<input class="hero-form-input" type="{{type}}" placeholder="{{placeholder}}" name="{{name}}">
+				{{/each}}
+			</div>
+
+			<div class="hero-form-checkbox">
+				{{#with checkbox}}
+					<input type="checkbox" name="{{name}}" id="{{name}}">
+					<label for="{{name}}" class="hero-form-checkbox-label">{{label}}</label>
+				{{/with}}
+			</div>
+
+			<button type="submit" class="hero-form-button">{{button}}</button>
+
+			<div class="hero-form-line"></div>
+
+			<p class="hero-form-text">{{info}}</p>
+		</div>
+	{{/with}}
+</div>
+
+{{#with updates}}
+<main class="updates">
+	<h3 class="updates-title">{{title}}</h3>
+	{{#each list}}
+	<div class="updates-item">
+		<div class="updates-item-icon"></div>
+		<strong class="updates-item-nickname">{{nickname}}</strong>
+		<p class="updates-item-text">{{description}}</p>
+	</div>
+	{{/each}}
+	{{#with show_all}}
+		<a href="{{url}}" class="updates-link">{{text}}</a>
+	{{/with}}
+</main>
+{{/with}}
+
+{{#with expirience}}
+	<div class="expirience">
+		<span class="expirience-tag">{{badge}}</span>
+		<h2 class="expirience-title">{{title}}</h2>
+		<div class="expirience-cards">
+			{{#each list}}
+				<div class="expirience-card">
+					<strong class="expirience-card-name">{{name}}</strong>
+					<p class="expirience-card-text">{{details}}</p>
+				</div>
+			{{/each}}
+		</div>
+	</div>
+{{/with}}
+
+<footer class="footer">
+	<div>
+		{{> logo}}
+		<span class="footer-copywright">Copyright 2023-2024</span>
+	</div>
+
+	{{#each footer}}
+		<div>
+			<li class="footer-title">{{title}}</li>
+			{{> nav list=links isVertical=true}}
+		</div>
+	{{/each}}
+</footer>
