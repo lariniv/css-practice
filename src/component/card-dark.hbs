@@ -1,0 +1,10 @@
+{{#with data}}
+	<div class="dark-card" id="{{id}}">
+		<div class="dark-card-image" style="background-image: url({{photo}})">
+			{{#if isNew}} <span class="dark-new-badge">NEW</span>	{{/if}}
+		</div>
+		<h4 class="dark-card-title">{{name}}</h4>
+		<p class="dark-card-text">{{description}}</p>
+		<a href="#" class="dark-card-button">Read all</a>
+	</div>
+{{/with}}
